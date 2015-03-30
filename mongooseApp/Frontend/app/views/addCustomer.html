@@ -1,0 +1,27 @@
+<h1>Customer</h1>
+<form ng-submit="save()" novalidate>
+    <fieldset>
+        <legend>Add Customer</legend>
+        <div class="form-group">
+            <input ng-model="customer.FirstName" class="form-control" placeholder="First Name" type="text" autocomplete="on" autofocus />
+        </div>
+        <div class="form-group">
+            <input ng-model="customer.LastName" class="form-control" placeholder="Last Name" type="text" autocomplete="on" />
+        </div>
+        <div class="form-group">
+            <input ng-model="customer.Birthdate" class="form-control" placeholder="Birth Date" type="date" autocomplete="on" />
+        </div>
+        <div class="form-group">
+            <input ng-model="customer.Age" class="form-control" placeholder="Age" type="number" min="0" max="200" autocomplete="on" />
+        </div>
+        <div class="form-group">
+            <input ng-model="customer.Address" class="form-control" placeholder="Address" type="text" autocomplete="on" />
+        </div>
+        <div class="form-group">
+            <input ng-model="customer.PhoneNumber" class="form-control" placeholder="Phone Number" type="tel" autocomplete="on" />
+        </div>
+        <div class="form-group">
+            <input class="form-control btn btn-primary" value="Save" type="submit" />
+        </div>
+    </fieldset>
+</form>
